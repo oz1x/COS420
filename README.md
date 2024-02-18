@@ -18,6 +18,7 @@ Grumio’s List is a web application that will allow you to search, share, and c
 
 ---
 ### Limitations/Bugs
+- Web Application
 <'List of bugs and/or limitations here'>
 
 ---
