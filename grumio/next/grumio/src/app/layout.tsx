@@ -14,9 +14,21 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <meta charSet="UTF-8"/>
+        <title>Grumio&apos;'s List</title>
+      </head>
+      <body className={inter.className}>
+      <title>Grumio&apos;'s List</title>
+      <a href="/">Home</a>
+      <a href="/login.html">Login</a>
+        {children}
+        </body>
+      
     </html>
   );
 }

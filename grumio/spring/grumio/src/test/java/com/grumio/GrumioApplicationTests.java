@@ -1,10 +1,10 @@
-package com.grumio.grumioslist;
+package com.grumio;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GrumioslistApplicationTests {
+class GrumioApplicationTests {
 
 	@Test
 	void contextLoads() {
