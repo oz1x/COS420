@@ -3,13 +3,15 @@ package com.grumio.controller;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 //@RequestMapping("grumio")
-
+@RequestMapping 
 public class GrumioListController {
 	
 	List<String> list = new ArrayList<String>();
@@ -28,8 +30,9 @@ public class GrumioListController {
 	public List<String> getList() {
 		return list;
 	}
-	@GetMapping("grumio/submit")
-	public boolean submit(@RequestParam(value = "name", defaultValue = "N/A")String name) 
+	@PostMapping("grumio/submit")
+	//@RequestMapping(name = "/grumio/submit", method = RequestMethod.POST)
+	public boolean submit(@RequestParam(value = "username", defaultValue = "N/A")String name) 
 	{
 		
 		if(list.indexOf(name) != -1) {
@@ -39,6 +42,7 @@ public class GrumioListController {
 		
 	}
 	@GetMapping("grumio/test")
+	
 	public List<String> test(@RequestParam(value = "name", defaultValue = "N/A")String name) 
 	{
 		

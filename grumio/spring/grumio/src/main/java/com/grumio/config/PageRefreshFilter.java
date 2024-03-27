@@ -1,4 +1,4 @@
-package com.grumio.config;
+/*package com.grumio.config;
 
 import java.io.IOException;
 import org.springframework.stereotype.Component;
@@ -27,4 +27,4 @@ public class PageRefreshFilter implements Filter {
             request.getRequestDispatcher(PAGE).forward(request, response);
         }
     }
-}
+}*/

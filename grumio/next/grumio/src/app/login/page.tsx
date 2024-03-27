@@ -4,7 +4,7 @@ import { FormEvent, useState } from 'react'
 
 export default function Login() {
     const [value, setValue] = useState([])
- 
+    var testbool = false
   
     async function onSubmit(event: FormEvent<HTMLFormElement>) {
         event.preventDefault()
@@ -18,17 +18,19 @@ export default function Login() {
         // Handle response if necessary
         const data = await response.json()
         .then(response => {
-          return response.json()
+          return response
         })
         .then(data => {
+            console.log(data)
             setValue(data)
+            //testbool = data
         })
       }
-     
+      
       return (
         <body>
             <h1>Login to Grumio's List</h1>
-            <form action="#" method="post">
+            <form onSubmit={onSubmit}>
                 <label >Username or Email:</label>
                 <input type="text" id="username" name="username" required></input>
                 <label >Password:</label>
@@ -36,7 +38,9 @@ export default function Login() {
 
                 <input type="submit" value="Login"></input>
             </form>
-
+            
+            <p>username correct: {String(value)}</p>
+            
             <p>If you don't have an account, <a href="signup.html">sign up here</a>.</p>
         </body>
       )

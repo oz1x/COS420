@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && rm ../../spring/grumio/src/main/resources/static/* -r && cp ./out/* -r ../../spring/grumio/src/main/resources/static/",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },

@@ -10,10 +10,8 @@ Grumio’s List is a web application that will allow you to search, share, and c
 - Odin York
 ---
 ### Installation
-1. Navigate to "./grumio/next/grumio" and run "npm run build". This will create a next.js output into the Spring Boot folder
-2. Navigate to "./grumio/spring/grumio" and run "./gradlew clean assemble". This will create a build folder.
-3. Navigate to "./grumio/spring/grumio/build/distributions". There will be a .zip file that must be extracted.
-4. Run demo.bat and navigate to localhost:8080 in a web browser to view the current website.
+1. Run build_and_run.ps1 in ./grumio
+2. Navigate to localhost:8080
 
 ---
 ### How To Use
@@ -28,3 +26,7 @@ Grumio’s List is a web application that will allow you to search, share, and c
 ### References/Citations
 <'List of references and authors of outsourced code here'>
 
+### Changelog
+3/27/24
+- Implemented login page so that the page will determine if the username is correct.
+- Created build&run script for ease of use.
