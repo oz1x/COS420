@@ -6,7 +6,6 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
-**/src/main/resources/static/
 
 ### STS ###
 .apt_generated
@@ -76,3 +75,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+/grumio/spring/grumio/src/main/resources/static
