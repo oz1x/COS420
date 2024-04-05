@@ -21,6 +21,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	//implementation 'org.mongodb:mongodb-driver-sync:5.0.1'
 }
 
 tasks.named('test') {

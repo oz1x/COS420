@@ -18,6 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  padding: 1rem;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -30,4 +31,11 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+input {
+	border-radius: 5px;
+	border-style: solid;
+	border-color:black;
+	border-width: 2px;
 }
