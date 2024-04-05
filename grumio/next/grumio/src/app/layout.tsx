@@ -24,8 +24,9 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
       <title>Grumio&apos;'s List</title>
-      <a href="/">Home</a>
-      <a href="/login">Login</a>
+      <a href="/" className="m-2">Home</a>
+      <a href="/login" className="m-2">Login</a>
+	  <a href="/create" className="m-2">Create</a>
         {children}
         </body>
       

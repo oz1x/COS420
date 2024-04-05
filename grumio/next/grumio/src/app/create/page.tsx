@@ -1,4 +1,5 @@
 import React from 'react'
+import RecipeDirections from '../components/RecipeDirections'
 
 const RecipeCreationPage = () => {
   return (
@@ -12,7 +13,7 @@ const RecipeCreationPage = () => {
 	    <input type="text" id="tagbox" name="tagbox"></input>
 	  </div>
 	  <div>
-
+		<RecipeDirections/>
 	  </div>
 	</div>
   )
