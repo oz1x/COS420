@@ -14,28 +14,27 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping 
 public class GrumioListController {
 	
-	List<String> list = new ArrayList<String>();
+	List<String> users = new ArrayList<String>();
 	
 	public GrumioListController() {
-		list.add("India");
-		list.add("China");
-		list.add("United States(US)");
-		list.add("Russia");
-		list.add("Australia");
-		list.add("African");
-		list.add("Europe");
+		users.add("Sepideh");
+		users.add("Ozwin");
+		users.add("Joe");
+		users.add("Odin");
+		users.add("Dylan");
+		users.add("Raist");
 	}
 	
 	@GetMapping("grumio/getlist")
 	public List<String> getList() {
-		return list;
+		return users;
 	}
 	@PostMapping("grumio/submit")
 	//@RequestMapping(name = "/grumio/submit", method = RequestMethod.POST)
 	public boolean submit(@RequestParam(value = "username", defaultValue = "N/A")String name) 
 	{
 		
-		if(list.indexOf(name) != -1) {
+		if(users.indexOf(name) != -1) {
 			return(true);
 		}
 		return(false);
@@ -46,8 +45,8 @@ public class GrumioListController {
 	public List<String> test(@RequestParam(value = "name", defaultValue = "N/A")String name) 
 	{
 		
-		list.add(name);
-		return list;
+		users.add(name);
+		return users;
 		
 	}
 }
