@@ -25,10 +25,11 @@ export default function RootLayout({
       <body className={inter.className}>
       <title>Grumio&apos;'s List</title>
       <a href="/" className="m-2">Home</a>
-      <a href="/login" className="m-2">Login</a>
-	  <a href="/create" className="m-2">Create</a>
-        {children}
-        </body>
+      <a href="login.html" className="m-2">Login</a>
+	    <a href="create.html" className="m-2">Create</a>
+      <a href="profile.html" className="m-2">Profile</a>
+      {children}
+      </body>
       
     </html>
   );
